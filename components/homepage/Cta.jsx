@@ -58,7 +58,7 @@ export default function Example() {
               href="./contact"
               className="inline-flex rounded-md bg-[#000] px-3.5 py-2.5 text-sm font-semibold text-[#fff] shadow-sm "
             >
-              Reach Out to HMB Brickwork Today!
+              Reach Out to Digital Nomad
             </Link>
           </div>
         </div>

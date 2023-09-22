@@ -12,8 +12,8 @@ const cards = [
     name: "Creative Web Design",
     imageUrl: "/images/web.jpeg",
     description:
-    "Crafting innovative web designs tailored to your brand's identity is our forte. We ensure your online presence is both visually stunning and functionally seamless.",
-      buttonText: "Discover",
+      "Crafting innovative web designs tailored to your brand's identity is our forte. We ensure your online presence is both visually stunning and functionally seamless.",
+    buttonText: "Discover",
 
     icon: PhoneIcon,
   },
@@ -21,7 +21,7 @@ const cards = [
     name: "Digital Marketing",
     imageUrl: "/images/digital.jpeg",
     description:
-    "Elevate your brand's reach with our comprehensive digital marketing strategies. We offer safe and affordable campaigns to connect you with a broader audience.",
+      "Elevate your brand's reach with our comprehensive digital marketing strategies. We offer safe and affordable campaigns to connect you with a broader audience.",
     buttonText: "Discover",
     icon: LifebuoyIcon,
   },
@@ -29,7 +29,7 @@ const cards = [
     name: "Mobile Apps",
     imageUrl: "/images/amobile.jpeg",
     description:
-    "Dive into the digital age with our bespoke mobile app solutions. Tailored to your needs, we craft applications that offer both functionality and a superior user experience.",
+      "Dive into the digital age with our bespoke mobile app solutions. Tailored to your needs, we craft applications that offer both functionality and a superior user experience.",
     buttonText: "Get Started",
     icon: NewspaperIcon,
   },
@@ -52,9 +52,9 @@ export default function Services() {
             Our <span className="text-[#f7be00]">Services</span>
           </h2>
           <p className="mt-6 text-lg leading-8 text-gray-100">
-            Your trusted partner for all brickwork and building projects.
-            Experience craftsmanship, quality, and dedication with every brick
-            laid.
+            Empowering your digital journey with precision and innovation.
+            Experience top-tier solutions, quality, and dedication in every
+            project we undertake.
           </p>
         </div>
         <div className="mx-auto mt-16 grid max-w-2xl grid-cols-1 gap-6 sm:mt-20 lg:mx-0 lg:max-w-none lg:grid-cols-3 lg:gap-8">
