@@ -13,7 +13,7 @@ import { useState } from "react";
 
 export default function ContactUs() {
   return (
-    <section className="relative py-20 md:py-32 overflow-hidden">
+    <section className="relative bg-white py-20 md:py-32 overflow-hidden">
       {/* <img
         className="absolute top-0 left-0 md:mt-24"
         src="/./images/brickoffice.jpg"
@@ -27,11 +27,11 @@ export default function ContactUs() {
       <div className="relative container px-4 mx-auto">
         <div className="max-w-7xl mx-auto">
           <div className="max-w-2xl text-center mx-auto mb-20">
-            <span className="inline-block py-1 px-3 mb-4 text-xs font-semibold text-orange-900 bg-orange-50 rounded-full">
+            <span className="inline-block py-1 px-3 mb-4 text-xs font-semibold text-orange-900 bg-white rounded-full">
               LET'S COLLABORATE
             </span>
 
-            <p className="text-xl text-gray-500 font-semibold">
+            <p className="text-xl text-gray-900 font-semibold">
               Your digital aspirations, our expertise. Let's shape the future
               together.
             </p>
