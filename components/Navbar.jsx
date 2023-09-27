@@ -6,16 +6,11 @@ import { Bars3Icon, XMarkIcon, PhoneIcon } from "@heroicons/react/24/outline";
 
 const navigation = [
   { name: "Home", href: "./" },
+  { name: "Web Design", href: "./web-design" },
+  { name: "Digital Marketing", href: "./digital-marketing" },
+  { name: "Mobile Apps", href: "mobile-app" },
   { name: "About us", href: "./about" },
-  { name: "Services", href: "./Service" },
-  { name: "Our Work", href: "./ourwork" },
   { name: "Contact", href: "./contact" },
-
-  // { name: "Digital Marketing", href: "./digital-marketing" },
-
-  // { name: "Mobile", href: "mobile-app" },
-
-  // { name: "Pricing", href: "./pricing" },
 ];
 
 export default function Navbar() {
@@ -64,7 +59,7 @@ export default function Navbar() {
             href="#"
             className="text-sm font-semibold leading-6 py-3 px-4 rounded-md text-gray-900 bg-[#fff]"
           >
-            +44 7956 579463{" "}
+            +254 724 419991{" "}
           </a>
         </div>
       </nav>
@@ -112,7 +107,7 @@ export default function Navbar() {
                   href="#"
                   className="-mx-3 block rounded-lg px-3 py-2.5 text-base font-semibold leading-7 text-[#fe5b0e] hover:bg-gray-50"
                 >
-                  +44 7956 579463{" "}
+                  +254 724 419991{" "}
                 </a>
               </div>
             </div>

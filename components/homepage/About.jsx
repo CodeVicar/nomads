@@ -26,7 +26,7 @@ const About = () => {
                   tailor-made web design solutions for start-ups, SME’s or
                   multinational organisations.
                 </p>
-                <h3 className="mt-2 text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
+                <h3 className="mt-10 text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
                   Focussed design and clean code
                 </h3>{" "}
                 <p className="mt-8">
