@@ -37,7 +37,7 @@ const cards = [
 
 export default function Services() {
   return (
-    <div className="relative isolate overflow-hidden bg-[#1b2338] py-24 sm:py-32">
+    <div className="relative isolate overflow-hidden bg-[#eff8ff] py-24 sm:py-32">
       {/* <Image
         src="/images/wall.jpg"
         alt="Brickwork Background"
@@ -48,10 +48,10 @@ export default function Services() {
 
       <div className="mx-auto max-w-7xl px-6 lg:px-8">
         <div className="mx-auto max-w-2xl lg:mx-0">
-          <h2 className="text-4xl font-bold tracking-tight text-white sm:text-6xl">
-            Our <span className="text-[#f7be00]">Services</span>
+          <h2 className="text-4xl font-bold tracking-tight text-gray-900 sm:text-6xl">
+            Our <span className="text-[#f61011]">Services</span>
           </h2>
-          <p className="mt-6 text-lg leading-8 text-gray-100">
+          <p className="mt-6 text-lg leading-8 text-gray-900">
             Empowering your digital journey with precision and innovation.
             Experience top-tier solutions, quality, and dedication in every
             project we undertake.
@@ -61,7 +61,7 @@ export default function Services() {
           {cards.map((card) => (
             <div
               key={card.name}
-              className="rounded overflow-hidden shadow-lg bg-[#1b2338] p-6 ring-1 ring-inset ring-white/20"
+              className="rounded overflow-hidden shadow-lg bg-[#fff] p-6 ring-1 ring-inset ring-white/20"
             >
               <Image
                 src={card.imageUrl}
@@ -71,11 +71,11 @@ export default function Services() {
                 width={500}
               />
               <div className="p-4">
-                <h3 className="font-semibold text-white mb-2">{card.name}</h3>
-                <p className="text-white mb-4">{card.description}</p>
-                <button className="bg-white text-[#000] px-4 py-2 rounded-md">
+                <h3 className="font-semibold text-gray-900 mb-2">{card.name}</h3>
+                <p className="text-gray-900 mb-4">{card.description}</p>
+                <button className="bg-[#f61011] text-[#000] px-4 py-2 rounded-md">
                   <Link href={`/Service`}>
-                    <p className="bg-[white] text-[#000] px-4 py-2 rounded-md">
+                    <p className=" text-[#fff] px-4 py-2 rounded-md">
                       {card.buttonText}
                     </p>
                   </Link>

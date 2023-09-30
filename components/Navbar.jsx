@@ -22,7 +22,7 @@ export default function Navbar() {
 
   return (
     // <header className="inset-x-0 top-0 z-50 bg-transparent sticky">
-    <header className="sticky inset-x-0 top-0 z-50 bg-[#1b2338] ">
+    <header className="sticky inset-x-0 top-0 z-50 bg-[#061948] ">
       <nav
         className="flex items-center justify-between p-6 lg:px-8"
         aria-label="Global"
@@ -57,7 +57,7 @@ export default function Navbar() {
         <div className="hidden lg:flex lg:flex-1 lg:justify-end">
           <a
             href="#"
-            className="text-sm font-semibold leading-6 py-3 px-4 rounded-md text-gray-900 bg-[#fff]"
+            className="text-sm font-semibold leading-6 py-3 px-4 rounded-md text-gray-100 bg-[#f61011]"
           >
             +254 724 419991{" "}
           </a>

@@ -5,7 +5,7 @@ import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
 
 export default function Example() {
   return (
-    <div className="bg-[#1b2338]">
+    <div className="bg-[#061948]">
       <div className="relative">
         <div className="mx-auto max-w-7xl">
           <div className="relative z-10 pt-4 lg:w-full lg:max-w-2xl">
@@ -40,7 +40,7 @@ export default function Example() {
                 <div className="mt-10 flex items-center gap-x-6">
                   <a
                     href="#"
-                    className="rounded-md bg-[#042f46] border-2 px-3.5 py-3 text-sm font-semibold text-white shadow-sm focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
+                    className="rounded-md bg-[#f61011] border-2 px-3.5 py-3 text-sm font-semibold text-white shadow-sm focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
                   >
                     Get started
                   </a>

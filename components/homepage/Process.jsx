@@ -27,7 +27,7 @@ const cards = [
 
 export default function Example() {
   return (
-    <div className="relative isolate overflow-hidden bg-gray-100 py-24 sm:py-32">
+    <div className="relative isolate overflow-hidden bg-[#061949] py-24 sm:py-32">
       {/* <img
         src="https://images.unsplash.com/photo-1521737604893-d14cc237f11d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&crop=focalpoint&fp-y=.8&w=2830&h=1500&q=80&blend=111827&sat=-100&exp=15&blend-mode=multiply"
         alt=""
@@ -53,30 +53,24 @@ export default function Example() {
       </div> */}
       <div className="mx-auto max-w-7xl px-6 lg:px-8">
         <div className="mx-auto max-w-2xl lg:mx-0">
-          <h2 className="text-4xl font-bold tracking-tight text-gray-900 sm:text-6xl">
-            About Us
+          <h2 className="text-4xl font-bold tracking-tight text-gray-100 sm:text-6xl">
+            Our Process 
           </h2>
-          <p className="mt-6 text-lg leading-8 text-gray-900">
-            Digital Nomad blends cutting-edge technology with artistic
-            creativity. We're dedicated to delivering tailored digital solutions
-            that exceed client expectations. With a team of experts, we merge
-            technical prowess with design innovation, setting new standards in
-            the tech industry.
-          </p>
+    
         </div>
         <div className="mx-auto mt-16 grid max-w-2xl grid-cols-1 gap-6 sm:mt-20 lg:mx-0 lg:max-w-none lg:grid-cols-3 lg:gap-8">
           {cards.map((card) => (
             <div
               key={card.name}
-              className="flex gap-x-4 rounded-xl bg-[#1b2338] p-6 ring-1 ring-inset ring-white/10 py-16"
+              className="flex gap-x-4 rounded-xl bg-[#fff] p-6 ring-1 ring-inset ring-white/10 py-16"
             >
               {/* <card.icon
                 className="h-7 w-5 flex-none text-indigo-400"
                 aria-hidden="true"
               /> */}
               <div className="text-base leading-7">
-                <h3 className="font-semibold text-gray-100">{card.name}</h3>
-                <p className="mt-2 text-gray-100">{card.description}</p>
+                <h3 className="font-semibold text-gray-900">{card.name}</h3>
+                <p className="mt-2 text-gray-900">{card.description}</p>
               </div>
             </div>
           ))}
