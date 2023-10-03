@@ -1,27 +1,30 @@
+
+import Image from 'next/image'
+
 const people = [
   {
     name: "HMB BrickWork",
     role: "Custom Next Js",
-    imageUrl: "images/port1.png",
+    imageUrl: "/images/port1.png",
     location: "London, United Kingdom",
   },
   {
     name: "Guard Match",
     role: "Landing Page",
-    imageUrl: "images/port2.png",
+    imageUrl: "/images/port2.png",
     location: "London, UK",
   },
   {
     name: "Somai Web Design",
     role: "Custom Wordpress",
-    imageUrl: "images/port3.png",
+    imageUrl: "/images/port3.png",
     location: "Nairobi Kenya",
   },
   {
-    name: "Somali Web Design",
-    role: "Co-Founder / CEO",
-    imageUrl: "images/port1.png",
-    location: "Toronto, Canada",
+    name: "Miad In Chelsea",
+    role: "Next js",
+    imageUrl: "/images/maid.png",
+    location: "London, Uk",
   },
   // More people...
 ];
@@ -45,10 +48,12 @@ export default function Example() {
         >
           {people.map((person) => (
             <li key={person.name}>
-              <img
-                className=" w-full rounded-2xl object-cover"
+              <Image
+                className="rounded-2xl "
                 src={person.imageUrl}
                 alt=""
+                width={300}
+                height={300}
               />
               <h3 className="mt-6 text-lg font-semibold leading-8 tracking-tight text-gray-900">
                 {person.name}

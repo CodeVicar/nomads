@@ -14,7 +14,7 @@ const cards = [
     description:
       "Crafting innovative web designs tailored to your brand's identity is our forte. We ensure your online presence is both visually stunning and functionally seamless.",
     buttonText: "Discover",
-
+    href: "/web-design",
     icon: PhoneIcon,
   },
   {
@@ -23,6 +23,7 @@ const cards = [
     description:
       "Elevate your brand's reach with our comprehensive digital marketing strategies. We offer safe and affordable campaigns to connect you with a broader audience.",
     buttonText: "Discover",
+    href: "/digital-marketing",
     icon: LifebuoyIcon,
   },
   {
@@ -31,6 +32,7 @@ const cards = [
     description:
       "Dive into the digital age with our bespoke mobile app solutions. Tailored to your needs, we craft applications that offer both functionality and a superior user experience.",
     buttonText: "Get Started",
+    href: "/mobile-app",
     icon: NewspaperIcon,
   },
 ];
@@ -71,11 +73,13 @@ export default function Services() {
                 width={500}
               />
               <div className="p-4">
-                <h3 className="font-semibold text-gray-900 mb-2">{card.name}</h3>
+                <h3 className="font-semibold text-gray-900 mb-2">
+                  {card.name}
+                </h3>
                 <p className="text-gray-900 mb-4">{card.description}</p>
                 <button className="bg-[#f61011] text-[#000] px-4 py-2 rounded-md">
-                  <Link href={`/Service`}>
-                    <p className=" text-[#fff] px-4 py-2 rounded-md">
+                  <Link href={card.href}>
+                    <p className="text-[#fff] px-4 py-2 rounded-md">
                       {card.buttonText}
                     </p>
                   </Link>

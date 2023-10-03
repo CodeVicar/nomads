@@ -32,22 +32,23 @@ export default function Example() {
           <div className="flex flex-col border-t border-gray-900/10 pt-10 sm:pt-16 lg:border-l lg:border-t-0 lg:pl-8 lg:pt-0 xl:pl-20">
             <img
               className="h-12 self-start"
-              src="https://tailwindui.com/img/logos/reform-logo-gray-900.svg"
+              src="images/mai.jpeg"
               alt=""
             />
             <figure className="mt-10 flex flex-auto flex-col justify-between">
               <blockquote className="text-lg leading-8 text-gray-900">
                 <p>
-                  “Excepteur veniam labore ullamco eiusmod. Pariatur consequat
-                  proident duis dolore nulla veniam reprehenderit nisi officia
-                  voluptate incididunt exercitation exercitation elit. Nostrud
-                  veniam sint dolor nisi ullamco.”
+                  “I couldn't be happier with the website Digital Nomad created for
+                  my business. Their attention to detail and creativity truly
+                  set them apart. Our online presence has significantly
+                  improved, and it's all thanks to their top-notch web design
+                  services”
                 </p>
               </blockquote>
               <figcaption className="mt-10 flex items-center gap-x-6">
                 <img
                   className="h-14 w-14 rounded-full bg-gray-50"
-                  src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80"
+                  src="images/mai.jpeg"
                   alt=""
                 />
                 <div className="text-base">

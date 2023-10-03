@@ -39,13 +39,13 @@ export default function Example() {
                 </p>
                 <div className="mt-10 flex items-center gap-x-6">
                   <a
-                    href="#"
+                    href="/contact"
                     className="rounded-md bg-[#f61011] border-2 px-3.5 py-3 text-sm font-semibold text-white shadow-sm focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
                   >
                     Get started
                   </a>
                   <a
-                    href="#"
+                    href="/about"
                     className="text-sm font-semibold leading-6 text-gray-100"
                   >
                     Learn more <span aria-hidden="true">→</span>
