@@ -112,10 +112,10 @@ export default function ContactUs() {
               </div>
             </div>
             <h2 className="text-4xl font-bold tracking-tight text-gray-900">
-              Request a free, no-obligation web design quotation,
+              Request a free, no-obligation Demo,
             </h2>
             <p className="mt-6 text-lg leading-8 text-gray-900">
-              We will get back to you within 24 hours to discuss your project in
+              We will get back to you within 24 hours to discuss in
               more detail.
             </p>
             <dl className="mt-10 space-y-4 text-base leading-7 text-gray-900">
@@ -128,8 +128,9 @@ export default function ContactUs() {
                   />
                 </dt>
                 <dd>
-                  27 Old Gloucester Street, <br />
-                  London, WC1N 3AX{" "}
+                  Merchant Square <br />
+                  Ikigai (Riverside) , <br />
+                  Nairobi, Kenya{" "}
                 </dd>
               </div>
               <div className="flex gap-x-4">
@@ -142,7 +143,7 @@ export default function ContactUs() {
                 </dt>
                 <dd>
                   <a className="hover:text-gray-900" href="tel:+254 20 5616004">
-                    +44 793 987 3003
+                    254722758705{" "}
                   </a>
                 </dd>
               </div>
@@ -155,8 +156,11 @@ export default function ContactUs() {
                   />
                 </dt>
                 <dd>
-                  <a className="hover:text-gray-900" href="mailto:info@peslac.com">
-                    info@pixelpath.co.uk
+                  <a
+                    className="hover:text-gray-900"
+                    href="mailto:info@peslac.com"
+                  >
+                    george@WareFlowAfrica.com
                   </a>
                 </dd>
               </div>
