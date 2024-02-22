@@ -6,9 +6,9 @@ import { Bars3Icon, XMarkIcon, PhoneIcon } from "@heroicons/react/24/outline";
 
 const navigation = [
   { name: "Home", href: "./" },
-  { name: "Web Design", href: "./web-design" },
-  { name: "Digital Marketing", href: "./digital-marketing" },
-  { name: "Mobile Apps", href: "mobile-app" },
+  // { name: "Web Design", href: "./web-design" },
+  // { name: "Digital Marketing", href: "./digital-marketing" },
+  // { name: "Mobile Apps", href: "mobile-app" },
   { name: "About us", href: "./about" },
   { name: "Contact", href: "./contact" },
 ];
@@ -22,25 +22,25 @@ export default function Navbar() {
 
   return (
     // <header className="inset-x-0 top-0 z-50 bg-transparent sticky">
-    <header className="sticky inset-x-0 top-0 z-50 bg-[#061948] ">
+    <header className="sticky inset-x-0 top-0 z-50 bg-white border-b-2 ">
       <nav
         className="flex items-center justify-between p-6 lg:px-8"
         aria-label="Global"
       >
         <div className="flex lg:flex-1">
-          <Link href="#" className="text-bold text-white">
-            {/* <span>Pixel Path</span> */}
-            <img className="h-14 w-auto" src="./images/thebrick.jpeg" alt="" />
+          <Link href="#" className="font-bold text-gray-900">
+            <span className="text-3xl">Ware</span>
+            <span className="text-3xl text-green-500">Flow</span>
           </Link>
         </div>
         <div className="flex lg:hidden">
           <button
             type="button"
-            className="-m-2.5 inline-flex items-center justify-center rounded-md p-2.5 text-gray-100"
+            className="-m-2.5 inline-flex items-center justify-center rounded-md p-2.5 text-green-500 font-bold"
             onClick={() => setMobileMenuOpen(true)}
           >
             <span className="sr-only">Open main menu</span>
-            <Bars3Icon className="h-6 w-6" aria-hidden="true" />
+            <Bars3Icon className="h-8 w-8" aria-hidden="true" />
           </button>
         </div>
         <div className="hidden lg:flex lg:gap-x-12">
@@ -48,18 +48,21 @@ export default function Navbar() {
             <a
               key={item.name}
               href={item.href}
-              className="text-sm font-semibold leading-6 text-[#fff]"
+              className="text-md font-semibold leading-6 text-gray0500"
             >
               {item.name}
             </a>
           ))}
         </div>
-        <div className="hidden lg:flex lg:flex-1 lg:justify-end">
+        <div className="hidden lg:flex gap-2 lg:flex-1 lg:justify-end">
+          <a href="#" className="text-md font-bold leading-6 py-3 px-4 underline ">
+            Login{" "}
+          </a>
           <a
             href="#"
-            className="text-sm font-semibold leading-6 py-3 px-4 rounded-md text-gray-100 bg-[#f61011]"
+            className="text-md font-semibold leading-6 py-3 px-4 rounded-md text-gray-100 bg-green-500 "
           >
-            +254 724 419991{" "}
+            Book a demo{" "}
           </a>
         </div>
       </nav>
@@ -73,20 +76,20 @@ export default function Navbar() {
         <Dialog.Panel className="fixed inset-y-0 right-0 z-50 w-full overflow-y-auto bg-white px-6 py-6 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10">
           <div className="flex items-center justify-between">
             <a href="#" className="-m-1.5 p-1.5">
-              <span className="sr-only">Your Company</span>
-              <img
+              <span className="text-green-800 font-bold">WareFlow</span>
+              {/* <img
                 className="h-14 w-auto"
                 src="./images/thebrick.jpeg"
                 alt=""
-              />
+              /> */}
             </a>
             <button
               type="button"
-              className="-m-2.5 rounded-md p-2.5 text-gray-700"
+              className="-m-2.5 rounded-md p-2.5 text-gray-900 font-bold"
               onClick={() => setMobileMenuOpen(false)}
             >
               <span className="sr-only">Close menu</span>
-              <XMarkIcon className="h-6 w-6" aria-hidden="true" />
+              <XMarkIcon className="h-8 w-8" aria-hidden="true" />
             </button>
           </div>
           <div className="mt-6 flow-root">
@@ -96,7 +99,7 @@ export default function Navbar() {
                   <a
                     key={item.name}
                     href={item.href}
-                    className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
+                    className="-mx-3 block rounded-lg px-3 py-2 text-base font-bold leading-7 text-gray-900 hover:bg-gray-50"
                   >
                     {item.name}
                   </a>
@@ -105,9 +108,9 @@ export default function Navbar() {
               <div className="py-6">
                 <a
                   href="#"
-                  className="-mx-3 block rounded-lg px-3 py-2.5 text-base font-semibold leading-7 text-[#fe5b0e] hover:bg-gray-50"
+                  className="text-sm font-semibold leading-6 py-3 px-4 rounded-md text-gray-100 bg-green-500 "
                 >
-                  +254 724 419991{" "}
+                  Book a demo{" "}
                 </a>
               </div>
             </div>

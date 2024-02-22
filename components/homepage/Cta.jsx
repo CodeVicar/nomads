@@ -1,68 +1,36 @@
-import Link from "next/link";
-import Image from "next/image";
+const stats = [
+  { id: 1, name: 'Creators on the platform', value: '8,000+' },
+  { id: 2, name: 'Flat platform fee', value: '3%' },
+  { id: 3, name: 'Uptime guarantee', value: '99.9%' },
+  { id: 4, name: 'Paid out to creators', value: '$70M' },
+]
 
 export default function Example() {
   return (
-    <div className="relative bg-[#061948]">
-      <div className="relative h-80 overflow-hidden bg-gray-900 md:absolute md:left-0 md:h-full md:w-1/3 lg:w-1/2">
-        <Image
-          className="h-full w-full object-cover"
-          src="/images/cta.jpg"
-          alt=""
-          height={500}
-          width={500}
-        />
-        <svg
-          viewBox="0 0 926 676"
-          aria-hidden="true"
-          className="absolute -bottom-24 left-24 w-[57.875rem] transform-gpu blur-[118px]"
-        >
-          <path
-            fill="url(#60c3c621-93e0-4a09-a0e6-4c228a0116d8)"
-            fillOpacity=".4"
-            d="m254.325 516.708-90.89 158.331L0 436.427l254.325 80.281 163.691-285.15c1.048 131.759 36.144 345.144 168.149 144.613C751.171 125.508 707.17-93.823 826.603 41.15c95.546 107.978 104.766 294.048 97.432 373.585L685.481 297.694l16.974 360.474-448.13-141.46Z"
-          />
-          <defs>
-            <linearGradient
-              id="60c3c621-93e0-4a09-a0e6-4c228a0116d8"
-              x1="926.392"
-              x2="-109.635"
-              y1=".176"
-              y2="321.024"
-              gradientUnits="userSpaceOnUse"
-            >
-              <stop stopColor="#4f0064" />
-              <stop offset={1} stopColor="#4f0064" />
-            </linearGradient>
-          </defs>
-        </svg>
-      </div>
-      <div className="relative mx-auto max-w-7xl py-24 sm:py-32 lg:px-8 lg:py-40">
-        <div className="pl-6 pr-6 md:ml-auto md:w-2/3 md:pl-16 lg:w-1/2 lg:pl-24 lg:pr-0 xl:pl-32">
-          <h2 className="text-base font-semibold leading-7 text-[#fff]">
-            RARING TO GET GOING?
-          </h2>
-          <p className="mt-2 text-3xl font-bold tracking-tight text-[#fff] sm:text-4xl">
-            Let’s get creative.
-          </p>
-          <p className="mt-6 text-base leading-7 text-[#fff]">
-            If you’re looking for a friendly web design agency for your next
-            project, we hope you’ll give us a whirl.
-          </p>
-
-          <p className="mt-6 text-white">
-            <span> You can call us on </span>
-          </p>
-          <div className="mt-8">
-            <Link
-              href="./contact"
-              className="inline-flex rounded-md bg-[#f61011] px-3.5 py-2.5 text-sm font-semibold text-[#fff] shadow-sm "
-            >
-              +254 724 419991{" "}
-            </Link>
+    <div className="relative bg-white">
+      <img
+        className="h-56 w-full bg-gray-50 object-cover lg:absolute lg:inset-y-0 lg:left-0 lg:h-full lg:w-1/2"
+        src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2850&q=80"
+        alt=""
+      />
+      <div className="mx-auto grid max-w-7xl lg:grid-cols-2 bg-[#061948]">
+        <div className="px-6 pb-24 pt-16 sm:pb-32 sm:pt-20 lg:col-start-2 lg:px-8 lg:pt-32">
+          <div className="mx-auto max-w-2xl lg:mr-0 lg:max-w-lg">
+            <h2 className="text-base font-semibold leading-8 text-white">Is Invoice Factoring right for you?</h2>
+            <p className="mt-2 text-3xl font-bold tracking-tight text-gray-100 sm:text-4xl">
+              Unlock your cash flow potential
+            </p>
+            <p className="mt-6 text-lg leading-8 text-gray-100">
+              Unlike a traditional bank, we are more flexible and can provide an alternative to loans, overdrafts and credit cards if you:
+            </p>
+            <ul className="mt-6 text-lg leading-8 text-gray-100 list-disc pl-6">
+              <li>Provide goods and/or services to any other business</li>
+              <li>Give your customers credit terms of between 30 and 90 days</li>
+              <li>Want to concentrate on your business and let us manage your credit control</li>
+            </ul>
           </div>
         </div>
       </div>
     </div>
-  );
+  )
 }

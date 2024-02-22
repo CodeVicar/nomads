@@ -1,62 +1,53 @@
-import React from "react";
-
-const About = () => {
+export default function Example() {
   return (
-    <div>
-      {/* about intro */}
-      <div className="bg-white py-24 sm:py-32">
-        <div className="mx-auto max-w-7xl px-6 lg:px-8">
-          <div className="mx-auto max-w-2xl lg:mx-0 lg:max-w-none">
-            <p className="text-base font-semibold leading-7 text-gray-900">
-              About Us{" "}
-            </p>
-            <h3 className="mt-2 text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
-              WE'RE A FULL-SERVICE DIGITAL AGENCY{" "}
-            </h3>
-            <div className="mt-10  max-w-xl grid-cols-1 gap-8 text-base leading-7 text-gray-900 lg:max-w-none lg:grid-cols-2">
-              <div>
-                <p>
-                  Whether you’re in the market for a new website, extra oomph
-                  for an existing one or something completely different, our
-                  London-based web design agency has years of experience.
-                </p>
-                <p className="mt-8">
-                  We build lasting relationships with like-minded businesses. As
-                  an agency, we work closely with clients to identify and create
-                  tailor-made web design solutions for start-ups, SME’s or
-                  multinational organisations.
-                </p>
-                <h3 className="mt-10 text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
-                  Focussed design and clean code
-                </h3>{" "}
-                <p className="mt-8">
-                  Our web design and web development teams pride themselves on
-                  writing fast, clean, industry-spec code. Creating bespoke
-                  systems or working with off-the-shelf platforms such as
-                  WordPress, Shopify or WooCommerce.
-                </p>
-              </div>
-            </div>
-            {/* <dl className="mt-16 grid grid-cols-1 gap-x-8 gap-y-12 sm:mt-20 sm:grid-cols-2 sm:gap-y-16 lg:mt-28 lg:grid-cols-4">
-              {stats.map((stat, statIdx) => (
-                <div
-                  key={statIdx}
-                  className="flex flex-col-reverse gap-y-3 border-l border-black/90 pl-6"
-                >
-                  <dt className="text-base leading-7 text-gray-900">
-                    {stat.label}
-                  </dt>
-                  <dd className="text-3xl font-semibold tracking-tight text-gray-900">
-                    {stat.value}
-                  </dd>
-                </div>
-              ))}
-            </dl> */}
-          </div>
+    <div className="bg-white">
+      <div className="relative overflow-hidden bg-[#061948] px-6 py-12 md:py-24 text-center shadow-2xl sm:px-16">
+        <h2 className="mx-auto max-w-7xl text-3xl font-bold tracking-tight text-white sm:text-4xl">
+          What is Invoice Financing?
+        </h2>
+        <p className="mx-auto mt-6 max-w-5xl  font-semibold text-lg leading-8 text-white">
+          Invoice Financing provides early access to the funds owed to you in
+          unpaid invoices. Whilst you’re waiting for invoices to be paid by your
+          customers, we can advance up to 90% of the invoice cash value to you,
+          usually within 24 hours.
+        </p>
+        <p className="mx-auto mt-6 max-w-3xl font-semibold text-lg leading-8 text-white">
+          Our Invoice Finance solutions include Selective Invoice Finance,
+          Invoice Factoring, and Invoice Discounting, all designed to help you
+          access funds quickly so you can strengthen cash flow and support your
+          growth ambitions.
+        </p>
+        <div className="mt-10 flex flex-col items-center gap-y-4 md:flex-row md:justify-center md:gap-x-6">
+          <a
+            href="/contact"
+            className="rounded-md bg-white border-2 px-3.5 py-3.5 text-lg font-bold text-green-500 shadow-sm focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
+          >
+            Book a demo
+          </a>
+      
+        </div>
+        <div className="absolute inset-0 pointer-events-none">
+          <svg
+            viewBox="0 0 1024 1024"
+            className="absolute left-1/2 top-1/2 -z-10 h-[64rem] w-[64rem] -translate-x-1/2 [mask-image:radial-gradient(closest-side,white,transparent)]"
+            aria-hidden="true"
+          >
+            <circle
+              cx={512}
+              cy={512}
+              r={512}
+              fill="url(#gradient)"
+              fillOpacity="0.7"
+            />
+            <defs>
+              <radialGradient id="gradient">
+                <stop stopColor="#7775D6" />
+                <stop offset={1} stopColor="#E935C1" />
+              </radialGradient>
+            </defs>
+          </svg>
         </div>
       </div>
     </div>
   );
-};
-
-export default About;
+}
