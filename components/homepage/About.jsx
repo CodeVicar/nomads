@@ -8,7 +8,7 @@ export default function Example() {
         <p className="mx-auto mt-6 max-w-5xl  font-semibold text-lg leading-8 text-white">
           Invoice Financing provides early access to the funds owed to you in
           unpaid invoices. Whilst you’re waiting for invoices to be paid by your
-          customers, we can advance up to 90% of the invoice cash value to you,
+          customers, we can advance up to 80% of the invoice cash value to you,
           usually within 24 hours.
         </p>
         <p className="mx-auto mt-6 max-w-3xl font-semibold text-lg leading-8 text-white">

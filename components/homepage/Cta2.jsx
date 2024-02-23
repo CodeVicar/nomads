@@ -10,10 +10,10 @@ const factoringFeatures = [
 
 export default function WareflowFactoringSection() {
   return (
-    <div className="bg-[#061948] py-24 sm:py-32">
+    <div className="bg-[#061948]">
       <div className="relative isolate">
-        <div className="mx-auto max-w-7xl sm:px-6 lg:px-8">
-          <div className="mx-auto flex max-w-2xl flex-col gap-16 bg-white/5 px-6 py-16 ring-1 ring-white/10 sm:rounded-3xl sm:p-8 lg:mx-0 lg:max-w-none lg:flex-row lg:items-center lg:py-20 xl:gap-x-20 xl:px-20">
+        <div className="mx-auto max-w-12xl">
+          <div className="mx-auto flex max-w-2xl flex-col gap-16 bg-white/5 px-6 py-16 ring-1 ring-white/10  sm:p-8 lg:mx-0 lg:max-w-none lg:flex-row lg:items-center lg:py-20 xl:gap-x-20 xl:px-20">
             <Image
               className="h-full w-full object-cover"
               src="/images/cta2.jpeg"
@@ -42,14 +42,7 @@ export default function WareflowFactoringSection() {
                   </li>
                 ))}
               </ul>
-              <div className="mt-10 flex">
-                <a
-                  href="#"
-                  className="text-sm font-semibold leading-6 text-indigo-400"
-                >
-                  See our job postings <span aria-hidden="true">&rarr;</span>
-                </a>
-              </div>
+           
             </div>
           </div>
         </div>
