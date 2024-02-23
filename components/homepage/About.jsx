@@ -3,20 +3,20 @@ export default function Example() {
     <div className="bg-white">
       <div className="relative overflow-hidden bg-[#061948] px-6 py-12 md:py-24 text-center shadow-2xl sm:px-16">
         <h2 className="mx-auto max-w-7xl text-3xl font-bold tracking-tight text-white sm:text-4xl">
-          What is Invoice Financing?
+          What is Invoice Factoring?
         </h2>
         <p className="mx-auto mt-6 max-w-5xl  font-semibold text-lg leading-8 text-white">
-          Invoice Financing provides early access to the funds owed to you in
+          Invoice Factoring provides early access to the funds owed to you in
           unpaid invoices. Whilst you’re waiting for invoices to be paid by your
           customers, we can advance up to 80% of the invoice cash value to you,
           usually within 24 hours.
         </p>
-        <p className="mx-auto mt-6 max-w-3xl font-semibold text-lg leading-8 text-white">
+        {/* <p className="mx-auto mt-6 max-w-3xl font-semibold text-lg leading-8 text-white">
           Our Invoice Finance solutions include Selective Invoice Finance,
           Invoice Factoring, and Invoice Discounting, all designed to help you
           access funds quickly so you can strengthen cash flow and support your
           growth ambitions.
-        </p>
+        </p> */}
         <div className="mt-10 flex flex-col items-center gap-y-4 md:flex-row md:justify-center md:gap-x-6">
           <a
             href="/contact"
