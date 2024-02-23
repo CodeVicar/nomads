@@ -12,7 +12,7 @@ const steps = () => {
 
         <p className="mt-6 text-lg leading-8 text-gray-900 max-w-7xl mx-auto text-center">
           Get a cash advance on selected invoices before they’re due. Access
-          fast working capital when you need it on a pay-as-you-go basis.
+          fast working capital when you need it.
         </p>
         <div className="px-4 mx-auto max-w-7xl sm:px-6 lg:px-8 relative">
           <div className="relative mt-12 lg:mt-20">
@@ -26,8 +26,6 @@ const steps = () => {
                 fill="none"
                 preserveAspectRatio="xMidYMid slice"
                 aria-hidden="true"
-                
-
               >
                 <path
                   d="M2 29C20.2154 33.6961 38.9915 35.1324 57.6111 37.5555C80.2065 40.496 102.791 43.3231 125.556 44.5555C163.184 46.5927 201.26 45 238.944 45C312.75 45 385.368 30.7371 458.278 20.6666C495.231 15.5627 532.399 11.6429 569.278 6.11109C589.515 3.07551 609.767 2.09927 630.222 1.99998C655.606 1.87676 681.208 1.11809 706.556 2.44442C739.552 4.17096 772.539 6.75565 805.222 11.5C828 14.8064 850.34 20.2233 873 24"
@@ -38,7 +36,6 @@ const steps = () => {
                   strokeDashoffset="10"
                   strokeMiterlimit="10"
                   fill="none"
-
                 />
               </svg>
             </div>
@@ -53,7 +50,7 @@ const steps = () => {
                   Submit invoice
                 </h3>
                 <p className="mt-3 sm:mt-4 text-base text-gray-600 dark:text-gray-400">
-                  You supply goods and services in the normal way
+                  Create and Submit your invoices on Wareflow{" "}
                 </p>
               </div>
               <div>
@@ -66,7 +63,7 @@ const steps = () => {
                   Factoring
                 </h3>
                 <p className="mt-3 sm:mt-4 text-base text-gray-600 dark:text-gray-400">
-                  We make available up to 80% of the value of each invoice.
+                  Get Financed up to 80% of the value of each invoice
                 </p>
               </div>
               <div>
