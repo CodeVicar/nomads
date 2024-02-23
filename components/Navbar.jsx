@@ -59,7 +59,7 @@ export default function Navbar() {
             Login{" "}
           </a>
           <a
-            href="#"
+            href="./contact"
             className="text-md font-semibold leading-6 py-3 px-4 rounded-md text-gray-100 bg-green-500 "
           >
             Book a demo{" "}
