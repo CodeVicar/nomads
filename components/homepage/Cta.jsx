@@ -31,14 +31,13 @@ export default function Example() {
                 Engaged in transporting goods for other businesses within the
                 supply chain.
               </li>
-              <li>Your invoices are B2B</li>
+              <li>Your invoices are business to business</li>
               <li>
                 You would be interested in financing all of your invoices or
                 just a few{" "}
               </li>
               <li>
-                Want to concentrate on your business and let us manage your
-                credit control
+                If you need access to fast capital to unlock your cash flow
               </li>
             </ul>
           </div>

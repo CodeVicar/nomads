@@ -73,10 +73,10 @@ const steps = () => {
                   </span>
                 </div>
                 <h3 className="mt-4 sm:mt-6 text-xl font-semibold leading-tight text-green-600 dark:text-white md:mt-10">
-                  We collect the payment
+                  WareFlow receives the payment
                 </h3>
                 <p className="mt-3 sm:mt-4 text-base text-gray-600 dark:text-gray-400">
-                  Our deal with the collection, you focus on running your
+                  We deal with the collection, you focus on running your
                   business
                 </p>
               </div>

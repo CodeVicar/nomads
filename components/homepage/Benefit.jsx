@@ -6,7 +6,7 @@ const benefit = () => {
       <div className="mt-2 md:mt-0 py-12 pb-6 sm:py-16 lg:pb-24 overflow-hidden">
         <h1>
           <span className="block text-center text-3xl font-extrabold tracking-tight text-green-600 sm:text-4xl">
-            Unlock the Wareflo Advantage:
+            Why Us{" "}
           </span>
         </h1>
 
