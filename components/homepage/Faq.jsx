@@ -4,69 +4,52 @@ import { MinusSmallIcon, PlusSmallIcon } from "@heroicons/react/24/outline";
 
 const faqs = [
   {
-    question: "What is the purpose of invoice factoring?",
+    question: "How does invoice factoring contribute to business growth?",
     answer:
-      "The purpose of invoice factoring is to provide businesses with immediate access to cash by selling their accounts receivable (unpaid invoices) to a factoring company at a discount.",
+      "Invoice factoring enables businesses to unlock liquidity from unpaid invoices, providing immediate access to funds for investment, operational expenses, and growth opportunities.",
   },
   {
-    question: "How does factoring improve cash flow?",
+    question: "What are the key benefits of invoice factoring?",
     answer:
-      "Factoring improves cash flow by providing immediate funds from unpaid invoices, allowing businesses to meet their financial obligations, invest in growth opportunities, and cover day-to-day expenses.",
+      "The benefits of invoice factoring include improved cash flow, reduced risk of bad debt, flexibility in financing, and streamlined credit control processes.",
   },
   {
-    question: "What are the benefits of invoice factoring?",
+    question: "Is invoice factoring subject to regulatory oversight?",
     answer:
-      "The benefits of invoice factoring include improved cash flow, access to immediate funds, reduced risk of bad debt, outsourcing of credit control and collections, and flexibility to focus on business growth.",
+      "Yes, invoice factoring operates within a regulated framework to ensure transparency, compliance, and consumer protection.",
   },
   {
-    question: "Is invoice factoring regulated in the UK?",
+    question: "How does invoice factoring mitigate the risk of non-payment?",
     answer:
-      "Yes, invoice factoring is regulated in the UK by the Financial Conduct Authority (FCA) under the Financial Services and Markets Act 2000.",
-  },
-  {
-    question:
-      "What is the difference between factoring and invoice discounting?",
-    answer:
-      "The main difference between factoring and invoice discounting is ownership of the sales ledger. With factoring, the factoring company manages sales ledger and credit control, while with invoice discounting, the business retains control of the sales ledger and credit control.",
-  },
-  {
-    question: "What is debt factoring?",
-    answer:
-      "Debt factoring is another term for invoice factoring, where a business sells its accounts receivable (unpaid invoices) to a factoring company in exchange for immediate cash.",
-  },
-  {
-    question: "Can I factor a single invoice or debtor?",
-    answer:
-      "Yes, some factoring companies offer selective invoice factoring, allowing businesses to factor individual invoices or debtors instead of their entire sales ledger.",
-  },
-  {
-    question: "Can I get invoice factoring if my business has bad credit?",
-    answer:
-      "Yes, invoice factoring is often available to businesses with bad credit since the factoring company's decision is based on the creditworthiness of the business's customers rather than the business itself.",
+      "Invoice factoring employs risk mitigation strategies such as credit assessments, recourse or non-recourse options, and proactive collection efforts to minimize the impact of non-payment.",
   },
   {
     question:
-      "What happens if a client doesn’t pay the invoice to the factoring company?",
+      "Can businesses of all sizes and industries benefit from invoice factoring?",
     answer:
-      "If a client fails to pay the invoice, the factoring company may either pursue the payment directly from the client or charge back the amount to the business depending on the terms of the factoring agreement, which may be recourse or non-recourse.",
+      "Yes, invoice factoring is suitable for businesses of various sizes and industries, offering tailored financing solutions to meet diverse needs and objectives.",
+  },
+  {
+    question: "What role does customer support play in the factoring process?",
+    answer:
+      "Dedicated customer support provides personalized assistance throughout the factoring process, ensuring smooth operations and customer satisfaction.",
+  },
+  {
+    question: "How can invoice factoring optimize cash flow management?",
+    answer:
+      "By converting outstanding invoices into immediate cash flow, invoice factoring helps businesses improve liquidity, reduce reliance on credit, and enhance financial stability.",
   },
   {
     question:
-      "What is the difference between recourse and non-recourse invoice factoring?",
+      "What factors should businesses consider when evaluating invoice factoring?",
     answer:
-      "In recourse factoring, the business retains the risk of non-payment, and if the client fails to pay, the business must repurchase the invoice from the factoring company. In non-recourse factoring, the factoring company assumes the risk of non-payment, and if the client fails to pay due to insolvency or other reasons covered by the agreement, the factoring company absorbs the loss.",
+      "Businesses should consider factors such as cost, contract terms, customer service quality, and compatibility with operational needs when evaluating invoice factoring.",
   },
   {
-    question: "What is the CHOCCs Factoring?",
+    question: "Why choose invoice factoring as your financing partner?",
     answer:
-      "CHOCCs Factoring stands for 'Construction, Housebuilding, Offshore, Commercial and Contracting sectors' Factoring. It is a specialized form of invoice factoring tailored to businesses operating in these sectors, providing tailored funding solutions to meet their unique needs.",
+      "Invoice factoring offers businesses a reliable source of working capital, personalized support, and a collaborative partnership dedicated to driving success.",
   },
-  {
-    question: "Why should you use an invoice factoring broker?",
-    answer:
-      "An invoice factoring broker can help businesses find the most suitable factoring company for their needs by providing expert advice, negotiating terms, and comparing multiple offers from different factoring companies, saving time and ensuring the best possible deal.",
-  },
-  // More questions...
 ];
 
 export default function Example() {

@@ -5,12 +5,12 @@ import { Dialog } from "@headlessui/react";
 import { Bars3Icon, XMarkIcon, PhoneIcon } from "@heroicons/react/24/outline";
 
 const navigation = [
-  // { name: "Home", href: "./" },
+  { name: "Home", href: "./" },
   // { name: "Web Design", href: "./web-design" },
   // { name: "Digital Marketing", href: "./digital-marketing" },
   // { name: "Mobile Apps", href: "mobile-app" },
-  // { name: "About us", href: "./about" },
-  // { name: "Contact", href: "./contact" },
+  { name: "About us", href: "./about" },
+  { name: "Contact", href: "./contact" },
 ];
 
 export default function Navbar() {
@@ -54,7 +54,7 @@ export default function Navbar() {
             </a>
           ))}
         </div>
-        {/* <div className="hidden lg:flex gap-2 lg:flex-1 lg:justify-end">
+        <div className="hidden lg:flex gap-2 lg:flex-1 lg:justify-end">
           <a href="#" className="text-md font-bold leading-6 py-3 px-4 underline ">
             Login{" "}
           </a>
@@ -64,7 +64,7 @@ export default function Navbar() {
           >
             Book a demo{" "}
           </a>
-        </div> */}
+        </div>
       </nav>
       <Dialog
         as="div"
