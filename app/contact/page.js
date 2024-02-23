@@ -160,7 +160,7 @@ export default function ContactUs() {
                     className="hover:text-gray-900"
                     href="mailto:info@peslac.com"
                   >
-                    george@WareFlowAfrica.com
+                    info@WareFlowAfrica.com
                   </a>
                 </dd>
               </div>
