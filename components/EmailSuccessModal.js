@@ -62,11 +62,9 @@ export default function EmailSuccessModal({ modal }) {
                     </Dialog.Title>
                     <div className='mt-2'>
                       <p className='text-sm text-gray-500'>
-                        Thank you for reaching out to us. Your message has been
+                        Thank you for reaching out to us. Your Request has been
                         successfully sent. We appreciate your interest and will
-                        get back to you as soon as possible. If you have any
-                        further questions or need immediate assistance, please
-                        don't hesitate to contact us directly.
+                        get back to you as soon as possible.
                       </p>
                     </div>
                   </div>

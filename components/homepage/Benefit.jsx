@@ -13,7 +13,7 @@ const benefit = () => {
 
         <p className="mt-6 text-xl leading-8 text-gray-900 max-w-5xl mx-auto text-center">
           Get a cash advance on selected invoices before they’re due. Access
-          fast working capital when you need it on a pay-as-you-go basis.
+          fast working capital when you need it
         </p>
         <div className="px-4 mx-auto max-w-7xl sm:px-6 lg:px-8 relative">
           <div className="relative mt-12 lg:mt-20">
@@ -28,10 +28,10 @@ const benefit = () => {
                     width={50}
                   />{" "}
                 </div>
-                <h3 className="mt-4 sm:mt-6 text-xl font-semibold leading-tight text-gray-900 dark:text-white md:mt-10">
+                <h3 className="mt-4 sm:mt-6 text-xl font-semibold leading-tight text-gray-900 md:mt-10">
                   Access to Cash Fast
                 </h3>
-                <p className="mt-3 sm:mt-4 text-base text-gray-600 dark:text-gray-400">
+                <p className="mt-3 sm:mt-4 text-base text-gray-900">
                   Access cashflow for your business as soon as your invoices are
                   raised.
                 </p>
@@ -46,16 +46,16 @@ const benefit = () => {
                     width={50}
                   />{" "}
                 </div>
-                <h3 className="mt-4 sm:mt-6 text-xl font-semibold leading-tight text-gray-900 dark:text-white md:mt-10">
+                <h3 className="mt-4 sm:mt-6 text-xl font-semibold leading-tight text-gray-900  md:mt-10">
                   Cashflow without Debt
                 </h3>
-                <p className="mt-3 sm:mt-4 text-base text-gray-600 dark:text-gray-400">
+                <p className="mt-3 sm:mt-4 text-base text-gray-900">
                   No need to worry about debt. Only release funds that are owed
                   to you by your customers!
                 </p>
               </div>
               <div>
-                <div className="flex items-center justify-center w-16 h-16 mx-auto bg-white dark:bg-gray-800 border-2 border-gray-200 dark:border-gray-700 rounded-full shadow">
+                <div className="flex items-center justify-center w-16 h-16 mx-auto bg-white  border-2 border-gray-200 dark:border-gray-700 rounded-full shadow">
                   <Image
                     className="h-full w-full object-cover"
                     src="/images/flexibility.png"
@@ -64,10 +64,10 @@ const benefit = () => {
                     width={50}
                   />{" "}
                 </div>
-                <h3 className="mt-4 sm:mt-6 text-xl font-semibold leading-tight text-gray-900 dark:text-white md:mt-10">
+                <h3 className="mt-4 sm:mt-6 text-xl font-semibold leading-tight text-gray-900  md:mt-10">
                   Flexible Terms
                 </h3>
-                <p className="mt-3 sm:mt-4 text-base text-gray-600 dark:text-gray-400">
+                <p className="mt-3 sm:mt-4 text-base text-gray-900">
                   Release as Much or as Little of Your Sales Ledger as your
                   Business Needs.
                 </p>
