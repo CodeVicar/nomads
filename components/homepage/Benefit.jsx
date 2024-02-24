@@ -1,4 +1,5 @@
 import React from "react";
+import Image from "next/image";
 
 const benefit = () => {
   return (
@@ -19,7 +20,13 @@ const benefit = () => {
             <div className="relative grid grid-cols-1 text-center gap-y-8 sm:gap-y-10 md:gap-y-12 md:grid-cols-3 gap-x-12">
               <div>
                 <div className="flex items-center justify-center w-16 h-16 mx-auto dark:bg-gray-800 border-2 border-gray-200 dark:border-gray-700 rounded-full shadow">
-                  <span className="text-green-500">&#10003;</span>
+                  <Image
+                    className="h-full w-full object-cover"
+                    src="/images/cash.png"
+                    alt=""
+                    height={50}
+                    width={50}
+                  />{" "}
                 </div>
                 <h3 className="mt-4 sm:mt-6 text-xl font-semibold leading-tight text-gray-900 dark:text-white md:mt-10">
                   Access to Cash Fast
@@ -31,7 +38,13 @@ const benefit = () => {
               </div>
               <div>
                 <div className="flex items-center justify-center w-16 h-16 mx-auto bg-white dark:bg-gray-800 border-2 border-gray-200 dark:border-gray-700 rounded-full shadow">
-                  <span className="text-green-500">&#10003;</span>
+                  <Image
+                    className="h-full w-full object-cover"
+                    src="/images/cash-flow.png"
+                    alt=""
+                    height={50}
+                    width={50}
+                  />{" "}
                 </div>
                 <h3 className="mt-4 sm:mt-6 text-xl font-semibold leading-tight text-gray-900 dark:text-white md:mt-10">
                   Cashflow without Debt
@@ -43,7 +56,13 @@ const benefit = () => {
               </div>
               <div>
                 <div className="flex items-center justify-center w-16 h-16 mx-auto bg-white dark:bg-gray-800 border-2 border-gray-200 dark:border-gray-700 rounded-full shadow">
-                  <span className="text-green-500">&#10003;</span>
+                  <Image
+                    className="h-full w-full object-cover"
+                    src="/images/flexibility.png"
+                    alt=""
+                    height={50}
+                    width={50}
+                  />{" "}
                 </div>
                 <h3 className="mt-4 sm:mt-6 text-xl font-semibold leading-tight text-gray-900 dark:text-white md:mt-10">
                   Flexible Terms
