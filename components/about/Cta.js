@@ -39,8 +39,8 @@ export default function Example() {
           </p>
           <p class="mt-6 text-lg leading-8 text-gray-600">
             We understand the difficulties of ensuring a steady cash flow to
-            cover crucial expenses like driver payments, fuel costs, and routine
-            maintenance.
+            cover crucial expenses like your employee's payments, fuel costs,
+            and routine maintenance.
           </p>
           <dl class="mt-10 max-w-xl space-y-8 text-base leading-7 text-gray-600 lg:max-w-none">
             <div class="relative pl-9">

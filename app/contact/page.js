@@ -115,8 +115,7 @@ export default function ContactUs() {
               Request a free, no-obligation Demo,
             </h2>
             <p className="mt-6 text-lg leading-8 text-gray-900">
-              We will get back to you within 24 hours to discuss in
-              more detail.
+              We will get back to you within 24 hours to discuss in more detail.
             </p>
             <dl className="mt-10 space-y-4 text-base leading-7 text-gray-900">
               <div className="flex gap-x-4">
@@ -160,7 +159,7 @@ export default function ContactUs() {
                     className="hover:text-gray-900"
                     href="mailto:info@peslac.com"
                   >
-                    info@WareFlowAfrica.com
+                    info@wareflowafrica.com
                   </a>
                 </dd>
               </div>

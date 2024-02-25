@@ -1,6 +1,6 @@
 const invoiceStats = [
   { id: 1, name: "Supply chain", value: "Industries" },
-  { id: 2, name: "Lowest in the industry", value: "Fee Structure" },
+  { id: 2, name: "Affordable Rate", value: "Fee Structure" },
   { id: 3, name: "Fast onboarding", value: "On bording" },
   { id: 4, name: "processing time", value: "24-48 hours" },
 ];
