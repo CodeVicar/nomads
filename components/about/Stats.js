@@ -2,7 +2,7 @@ const invoiceStats = [
   { id: 1, name: "Supply chain", value: "Industries" },
   { id: 2, name: "Affordable Rate", value: "Fee Structure" },
   { id: 3, name: "Fast onboarding", value: "On bording" },
-  { id: 4, name: "processing time", value: "24-48 hours" },
+  { id: 4, name: "24-48 hours", value: "Processing time" },
 ];
 
 export default function InvoiceStats() {

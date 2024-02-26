@@ -55,9 +55,9 @@ export default function Navbar() {
           ))}
         </div>
         <div className="hidden lg:flex gap-2 lg:flex-1 lg:justify-end">
-          <a href="#" className="text-md font-bold leading-6 py-3 px-4 underline ">
+          {/* <a href="#" className="text-md font-bold leading-6 py-3 px-4 underline ">
             Login{" "}
-          </a>
+          </a> */}
           <a
             href="./contact"
             className="text-md font-semibold leading-6 py-3 px-4 rounded-md text-gray-100 bg-green-500 "
