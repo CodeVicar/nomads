@@ -18,7 +18,7 @@ export default function Example() {
                   to breaking down barriers and providing frictionless access to
                   essential financial services.
                 </p>
-                <p className="mt-6 text-lg leading-8 text-gray-600">
+                <p className="mt-6">
                   We are a dynamic team dedicated to revolutionizing the
                   financial landscape for businesses in Kenya and across Africa.
                   Founded with a vision to streamline financial services,
@@ -45,7 +45,7 @@ export default function Example() {
           <div className="mt-20 sm:mt-24 md:mx-auto md:max-w-2xl lg:mx-0 lg:mt-0 lg:w-screen">
             <img
               className="h-full w-full object-cover"
-              src="/images/invoice.jpeg"
+              src="/images/paid.jpg"
               alt=""
             />
           </div>

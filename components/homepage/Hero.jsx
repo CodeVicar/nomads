@@ -27,7 +27,7 @@ export default function Example() {
                 </div>
                 <h1 className="text-4xl font-bold tracking-tight text-gray-900 sm:text-6xl">
                   Turn outstanding invoices <span>into </span>
-                  <span className="text-green-600 underline font-bold">instant capital</span>
+                  <span className="text-green-600  font-bold">instant capital</span>
                 </h1>
                 <p className="mt-6 text-lg leading-8 text-gray-900">
                   Get instant cash flow by leveraging your outstanding invoices
