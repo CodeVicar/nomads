@@ -103,7 +103,7 @@ return (
             </div>
           </div>
           <h2 className="text-4xl font-bold tracking-tight text-gray-900">
-            Request a free, no-obligation Demo,
+            Request a free no-obligation Demo
           </h2>
           <p className="mt-6 text-lg leading-8 text-gray-900">
             We will get back to you within 24 hours to discuss in more detail.
@@ -133,7 +133,7 @@ return (
               </dt>
               <dd>
                 <a className="hover:text-gray-900" href="tel:+254 20 5616004">
-                  254722758705{" "}
+                  +254722758705{" "}
                 </a>
               </dd>
             </div>
@@ -362,7 +362,7 @@ return (
             ) : (
               <button
                 type="submit"
-                className="rounded-md bg-[#26feb7] px-3.5 py-2.5 text-center text-sm font-semibold text-black shadow-sm hover:bg-green-400 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue-500"
+                className="rounded-md bg-green-500 px-4 py-3.5 text-center text-sm font-semibold text-white shadow-sm hover:bg-green-600"
               >
                 Submit Form
               </button>
