@@ -105,7 +105,7 @@ export default function Example() {
           ))}
         </div> */}
         <p className="mt-10 text-center text-xs leading-5 text-gray-100">
-          &copy; 20224 WareFlow Technology LTD, All rights reserved.
+          &copy; 2024 WareFlow Technology LTD, All rights reserved.
         </p>
       </div>
     </footer>

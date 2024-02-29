@@ -40,7 +40,7 @@ export default function Example() {
                     href="/contact"
                     className="rounded-md bg-green-500 border-2 px-3.5 py-3.5 text-lg font-bold text-white shadow-sm focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
                   >
-                    Book a demo
+                    Apply Now
                   </a>
                   <a
                     href="/about"
