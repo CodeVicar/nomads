@@ -65,6 +65,14 @@ export default function Navbar() {
             Book a demo{" "}
           </a>
         </div>
+        <div className="py-6 px-8">
+          <a
+            href="https://dashboard-demo.wareflowafrica.com/login"
+            className="text-sm font-semibold leading-6 py-3 px-4 rounded-md text-gray- "
+          >
+            Login{" "}
+          </a>
+        </div>
       </nav>
       <Dialog
         as="div"
@@ -107,10 +115,18 @@ export default function Navbar() {
               </div>
               <div className="py-6">
                 <a
-                  href="#"
+                  href="./contact"
                   className="text-sm font-semibold leading-6 py-3 px-4 rounded-md text-gray-100 bg-green-500 "
                 >
                   Book a demo{" "}
+                </a>
+              </div>
+              <div className="py-6">
+                <a
+                  href="https://dashboard-demo.wareflowafrica.com/login"
+                  className="text-sm font-semibold leading-6 py-3 px-4 rounded-md text-gray-100 bg-green-500 "
+                >
+                  Login{" "}
                 </a>
               </div>
             </div>
