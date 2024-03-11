@@ -55,9 +55,9 @@ export default function Navbar() {
           ))}
         </div>
         <div className="hidden lg:flex gap-2 lg:flex-1 lg:justify-end">
-          {/* <a href="#" className="text-md font-bold leading-6 py-3 px-4 underline ">
+          <a href="https://dashboard-demo.wareflowafrica.com/login" className="text-md font-bold leading-6 py-3 px-4 underline ">
             Login{" "}
-          </a> */}
+          </a>
           <a
             href="./contact"
             className="text-md font-semibold leading-6 py-3 px-4 rounded-md text-gray-100 bg-green-500 "
@@ -65,14 +65,14 @@ export default function Navbar() {
             Book a demo{" "}
           </a>
         </div>
-        <div className="py-6 px-8">
+        {/* <div className="py-6 px-8">
           <a
-            href="https://dashboard-demo.wareflowafrica.com/login"
+            href=""
             className="text-sm font-semibold leading-6 py-3 px-4 rounded-md text-gray- "
           >
             Login{" "}
           </a>
-        </div>
+        </div> */}
       </nav>
       <Dialog
         as="div"
@@ -124,7 +124,7 @@ export default function Navbar() {
               <div className="py-6">
                 <a
                   href="https://dashboard-demo.wareflowafrica.com/login"
-                  className="text-sm font-semibold leading-6 py-3 px-4 rounded-md text-gray-100 bg-green-500 "
+                  className="text-sm font-semibold leading-6 py-3 px-4 rounded-md text-gray-900 "
                 >
                   Login{" "}
                 </a>
