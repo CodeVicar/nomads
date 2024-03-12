@@ -48,14 +48,14 @@ export default function Navbar() {
             <a
               key={item.name}
               href={item.href}
-              className="text-md font-semibold leading-6 text-gray0500"
+              className="text-md font-semibold leading-6 text-gray-900"
             >
               {item.name}
             </a>
           ))}
         </div>
         <div className="hidden lg:flex gap-2 lg:flex-1 lg:justify-end">
-          <a href="https://dashboard-demo.wareflowafrica.com/login" className="text-md font-bold leading-6 py-3 px-4 underline ">
+          <a href="https://dashboard-demo.wareflowafrica.com/login" className="text-md text-gray-900 font-bold leading-6 py-3 px-4 underline ">
             Login{" "}
           </a>
           <a
