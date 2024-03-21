@@ -11,7 +11,7 @@ export async function connectToDatabase() {
 
   const client = await MongoClient.connect(uri, { useNewUrlParser: true });
 
-  const db = client.db('wareflowDemo');
+  const db = client.db('wareflowDB');
 
   cachedDb = db;
 

@@ -55,7 +55,7 @@ export default function Navbar() {
           ))}
         </div>
         <div className="hidden lg:flex gap-2 lg:flex-1 lg:justify-end">
-          <a href="https://dashboard-demo.wareflowafrica.com/login" className="text-md text-gray-900 font-bold leading-6 py-3 px-4 underline ">
+          <a href="https://account.wareflowafrica.com/login" className="text-md text-gray-900 font-bold leading-6 py-3 px-4 underline ">
             Login{" "}
           </a>
           <a
@@ -123,7 +123,7 @@ export default function Navbar() {
               </div>
               <div className="py-6">
                 <a
-                  href="https://dashboard-demo.wareflowafrica.com/login"
+                  href="https://account.wareflowafrica.com/login"
                   className="text-sm font-semibold leading-6 py-3 px-4 rounded-md text-gray-900 "
                 >
                   Login{" "}
