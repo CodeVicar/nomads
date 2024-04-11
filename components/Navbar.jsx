@@ -48,23 +48,38 @@ export default function Navbar() {
             <a
               key={item.name}
               href={item.href}
-              className="text-md font-semibold leading-6 text-gray0500"
+              className="text-md font-semibold leading-6 text-gray-900"
             >
               {item.name}
             </a>
           ))}
         </div>
         <div className="hidden lg:flex gap-2 lg:flex-1 lg:justify-end">
+<<<<<<< HEAD
           <a href="#" className="text-md font-bold leading-6 py-3 px-4 underline ">
+=======
+          <a href="https://account.wareflowafrica.com/login" className="text-md text-gray-900 font-bold leading-6 py-3 px-4 underline ">
+>>>>>>> 3b36823e65545ad3ec2b5c2110afcf15fd3d380c
             Login{" "}
           </a>
           <a
-            href="#"
+            href="./contact"
             className="text-md font-semibold leading-6 py-3 px-4 rounded-md text-gray-100 bg-green-500 "
           >
             Book a demo{" "}
           </a>
         </div>
+<<<<<<< HEAD
+=======
+        {/* <div className="py-6 px-8">
+          <a
+            href=""
+            className="text-sm font-semibold leading-6 py-3 px-4 rounded-md text-gray- "
+          >
+            Login{" "}
+          </a>
+        </div> */}
+>>>>>>> 3b36823e65545ad3ec2b5c2110afcf15fd3d380c
       </nav>
       <Dialog
         as="div"
@@ -107,10 +122,18 @@ export default function Navbar() {
               </div>
               <div className="py-6">
                 <a
-                  href="#"
+                  href="./contact"
                   className="text-sm font-semibold leading-6 py-3 px-4 rounded-md text-gray-100 bg-green-500 "
                 >
                   Book a demo{" "}
+                </a>
+              </div>
+              <div className="py-6">
+                <a
+                  href="https://account.wareflowafrica.com/login"
+                  className="text-sm font-semibold leading-6 py-3 px-4 rounded-md text-gray-900 "
+                >
+                  Login{" "}
                 </a>
               </div>
             </div>

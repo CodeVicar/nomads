@@ -46,9 +46,15 @@ const faqs = [
       "Businesses should consider factors such as cost, contract terms, customer service quality, and compatibility with operational needs when evaluating invoice factoring.",
   },
   {
+<<<<<<< HEAD
     question: "Why choose invoice factoring as your financing partner?",
     answer:
       "Invoice factoring offers businesses a reliable source of working capital, personalized support, and a collaborative partnership dedicated to driving success.",
+=======
+    question: "Why choose us invoice factoring services?",
+    answer:
+      "WareFlow invoice factoring offers businesses a reliable source of working capital, personalized support, and a collaborative partnership dedicated to driving success.",
+>>>>>>> 3b36823e65545ad3ec2b5c2110afcf15fd3d380c
   },
 ];
 

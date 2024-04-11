@@ -5,7 +5,7 @@ const factoringFeatures = [
   "Effortless Payment Collection",
   "Instant Cash Access",
   "Dedicated Relationship Management",
-  "save time chasing payments."
+  "save time chasing payments.",
 ];
 
 export default function WareflowFactoringSection() {
@@ -16,17 +16,18 @@ export default function WareflowFactoringSection() {
           <div className="mx-auto flex max-w-2xl flex-col gap-16 bg-white/5 px-6 py-16 ring-1 ring-white/10  sm:p-8 lg:mx-0 lg:max-w-none lg:flex-row lg:items-center lg:py-20 xl:gap-x-20 xl:px-20">
             <Image
               className="h-full w-full object-cover"
-              src="/images/cta2.jpeg"
+              src="/images/cta3.jpeg"
               alt=""
               height={500}
               width={500}
             />
             <div className="w-full flex-auto">
               <h2 className="text-3xl font-bold tracking-tight text-white sm:text-4xl">
-                Unlock Your Business Potential with Wareflow Factoring
+                Discover Your Business's Potential{" "}
               </h2>
               <p className="mt-6 text-lg font-semibold leading-8 text-white">
-                Wareflow Factoring empowers your business with innovative solutions for managing payments and optimizing cash flow.
+                Wareflow Factoring empowers your business with innovative
+                solutions for managing payments and optimizing cash flow.
               </p>
               <ul
                 role="list"
@@ -42,7 +43,6 @@ export default function WareflowFactoringSection() {
                   </li>
                 ))}
               </ul>
-           
             </div>
           </div>
         </div>

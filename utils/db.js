@@ -1,6 +1,6 @@
 import { MongoClient } from 'mongodb';
 
-const uri = process.env.MONGO_DB_URI;
+const uri = process.env.MONGO_URI;
 
 let cachedDb = null;
 
@@ -11,7 +11,7 @@ export async function connectToDatabase() {
 
   const client = await MongoClient.connect(uri, { useNewUrlParser: true });
 
-  const db = client.db('PixelDB');
+  const db = client.db('wareflowDB');
 
   cachedDb = db;
 
