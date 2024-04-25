@@ -1,63 +1,22 @@
-
-"use client";import { useState } from "react";
+"use client";
+import { useState, useEffect } from "react";
 import EmailSuccessModal from "../../components/EmailSuccessModal";
 import { Oval } from "react-loader-spinner";
 import {
-BuildingOffice2Icon,
-EnvelopeIcon,
-PhoneIcon,
+  BuildingOffice2Icon,
+  EnvelopeIcon,
+  PhoneIcon,
 } from "@heroicons/react/24/outline";
+import initMixpanel from "@/lib/mixpanel";
+
+import mixpanel from "mixpanel-browser";
 
 export default function ContactUs() {
-const [formData, setFormData] = useState({
-  firstName: "",
-  lastName: "",
-  companyName: "",
-  email: "",
-  country: "",
-  phoneNumber: "",
-  annualRevenue: "",
-  requirements: "",
-  referralSource: "",
-});
-const [success, setSuccess] = useState(false);
-const [loading, setLoading] = useState(false);
-
-const handleSubmit = async (event) => {
-  event.preventDefault();
-  if (
-    !formData.firstName ||
-    !formData.lastName ||
-    !formData.email ||
-    !formData.phoneNumber ||
-    !formData.requirements
-  ) {
-    alert("Please fill the entire form");
-    return;
-  }
-  const data = {
-    ...formData,
-    status: "new",
-  };
-  try {
-    setLoading(true);
-    const response = await fetch("/api/contact", {
-      method: "POST",
-      headers: {
-        "Content-Type": "application/json",
-      },
-      body: JSON.stringify(data),
-    });
-
-    const result = await response.json();
-    if (response.status === 200) {
-      setSuccess(true);
-    }
-  } catch (error) {
-    console.error("Error occurred during POST request:", error);
-  }
-  setLoading(false);
-  setFormData({
+  useEffect(() => {
+    initMixpanel();
+  }, []);
+  const [formData, setFormData] = useState({
+    distinct_id: "",
     firstName: "",
     lastName: "",
     companyName: "",
@@ -68,19 +27,81 @@ const handleSubmit = async (event) => {
     requirements: "",
     referralSource: "",
   });
-};
+  const [success, setSuccess] = useState(false);
+  const [loading, setLoading] = useState(false);
 
-const handleChange = (event) => {
-  const { name, value } = event.target;
-  setFormData((prevFormData) => ({
-    ...prevFormData,
-    [name]: value,
-  }));
-};
+  const handleSubmit = async (event) => {
+    event.preventDefault();
+    if (
+      !formData.firstName ||
+      !formData.lastName ||
+      !formData.email ||
+      !formData.phoneNumber ||
+      !formData.requirements
+    ) {
+      alert("Please fill the entire form");
+      return;
+    }
+    const data = {
+      ...formData,
+      status: "new",
+    };
+    try {
+      setLoading(true);
+      const response = await fetch("/api/contact", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(data),
+      });
 
-const modalClose = () => {
-  setSuccess(false);
-};
+      const result = await response.json();
+      if (response.status === 200) {
+        setSuccess(true);
+        // Track the bookDemo event with the specified properties
+        mixpanel.identify(formData.email);
+
+        mixpanel.track("bookDemo", {
+          first_name: formData.firstName,
+          last_name: formData.lastName,
+          company_name: formData.companyName,
+          phone: formData.phoneNumber,
+          referral: formData.referralSource,
+          annual_revenue: formData.annualRevenue,
+          request: formData.requirements,
+          email: formData.email,
+          country: formData.country,
+        });
+      }
+    } catch (error) {
+      console.error("Error occurred during POST request:", error);
+    }
+    setLoading(false);
+    setFormData({
+      firstName: "",
+      lastName: "",
+      companyName: "",
+      email: "",
+      country: "",
+      phoneNumber: "",
+      annualRevenue: "",
+      requirements: "",
+      referralSource: "",
+    });
+  };
+
+  const handleChange = (event) => {
+    const { name, value } = event.target;
+    setFormData((prevFormData) => ({
+      ...prevFormData,
+      [name]: value,
+    }));
+  };
+
+  const modalClose = () => {
+    setSuccess(false);
+  };
 
 return (
   <div className="relative isolate bg-white">
@@ -133,8 +154,7 @@ return (
               </dt>
               <dd>
                 <a className="hover:text-gray-900" href="tel:+254 20 5616004">
-                  +254722758705{" "}
-                </a>
+                +254 721 233770                </a>
               </dd>
             </div>
             <div className="flex gap-x-4">
@@ -185,43 +205,6 @@ return (
                 />
               </div>
             </div>
-<<<<<<< HEAD
-            <h2 className="text-4xl font-bold tracking-tight text-gray-900">
-              Request a free, no-obligation Demo,
-            </h2>
-            <p className="mt-6 text-lg leading-8 text-gray-900">
-              We will get back to you within 24 hours to discuss your project in
-              more detail.
-            </p>
-            <dl className="mt-10 space-y-4 text-base leading-7 text-gray-900">
-              <div className="flex gap-x-4">
-                <dt className="flex-none">
-                  <span className="sr-only">Address</span>
-                  <BuildingOffice2Icon
-                    className="h-7 w-6 text-gray-900"
-                    aria-hidden="true"
-                  />
-                </dt>
-                <dd>
-                  Merchant Square <br />
-                  Ikigai (Riverside) , <br />
-                  Nairobi, Kenya{" "}
-                </dd>
-              </div>
-              <div className="flex gap-x-4">
-                <dt className="flex-none">
-                  <span className="sr-only">Telephone</span>
-                  <PhoneIcon
-                    className="h-7 w-6 text-gray-900"
-                    aria-hidden="true"
-                  />
-                </dt>
-                <dd>
-                  <a className="hover:text-gray-900" href="tel:+254 20 5616004">
-                    254722758705{" "}
-                  </a>
-                </dd>
-=======
             <div>
               <label
                 htmlFor="lastName"
@@ -240,7 +223,6 @@ return (
                   onChange={handleChange}
                   placeholder="Last Name"
                 />
->>>>>>> 3b36823e65545ad3ec2b5c2110afcf15fd3d380c
               </div>
             </div>
             <div>

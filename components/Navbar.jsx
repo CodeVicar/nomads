@@ -3,6 +3,7 @@ import Link from "next/link";
 import { useState } from "react";
 import { Dialog } from "@headlessui/react";
 import { Bars3Icon, XMarkIcon, PhoneIcon } from "@heroicons/react/24/outline";
+import mixpanel from "mixpanel-browser";
 
 const navigation = [
   { name: "Home", href: "./" },
@@ -18,7 +19,9 @@ export default function Navbar() {
 
   // change nav background on scroll
 
-  //
+  const handleBookDemoClick = () => {
+    mixpanel.track("landingPageClick", { bookDemo: true });
+  };
 
   return (
     // <header className="inset-x-0 top-0 z-50 bg-transparent sticky">
@@ -28,7 +31,7 @@ export default function Navbar() {
         aria-label="Global"
       >
         <div className="flex lg:flex-1">
-          <Link href="#" className="font-bold text-gray-900">
+          <Link href="/" className="font-bold text-gray-900">
             <span className="text-3xl">Ware</span>
             <span className="text-3xl text-green-500">Flow</span>
           </Link>
@@ -55,22 +58,20 @@ export default function Navbar() {
           ))}
         </div>
         <div className="hidden lg:flex gap-2 lg:flex-1 lg:justify-end">
-<<<<<<< HEAD
-          <a href="#" className="text-md font-bold leading-6 py-3 px-4 underline ">
-=======
-          <a href="https://account.wareflowafrica.com/login" className="text-md text-gray-900 font-bold leading-6 py-3 px-4 underline ">
->>>>>>> 3b36823e65545ad3ec2b5c2110afcf15fd3d380c
+          <a
+            href="https://account.wareflowafrica.com/login"
+            className="text-md text-gray-900 font-bold leading-6 py-3 px-4 underline "
+          >
             Login{" "}
           </a>
           <a
             href="./contact"
-            className="text-md font-semibold leading-6 py-3 px-4 rounded-md text-gray-100 bg-green-500 "
-          >
+            className="text-md font-semibold leading-6 py-3 px-4 rounded-md text-gray-100 bg-green-500"
+            onClick={handleBookDemoClick}
+            >
             Book a demo{" "}
           </a>
         </div>
-<<<<<<< HEAD
-=======
         {/* <div className="py-6 px-8">
           <a
             href=""
@@ -79,7 +80,6 @@ export default function Navbar() {
             Login{" "}
           </a>
         </div> */}
->>>>>>> 3b36823e65545ad3ec2b5c2110afcf15fd3d380c
       </nav>
       <Dialog
         as="div"

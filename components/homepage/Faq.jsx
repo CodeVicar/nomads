@@ -1,6 +1,7 @@
 "use client";
 import { Disclosure } from "@headlessui/react";
 import { MinusSmallIcon, PlusSmallIcon } from "@heroicons/react/24/outline";
+import mixpanel from "mixpanel-browser";
 
 const faqs = [
   {
@@ -46,19 +47,19 @@ const faqs = [
       "Businesses should consider factors such as cost, contract terms, customer service quality, and compatibility with operational needs when evaluating invoice factoring.",
   },
   {
-<<<<<<< HEAD
-    question: "Why choose invoice factoring as your financing partner?",
-    answer:
-      "Invoice factoring offers businesses a reliable source of working capital, personalized support, and a collaborative partnership dedicated to driving success.",
-=======
     question: "Why choose us invoice factoring services?",
     answer:
       "WareFlow invoice factoring offers businesses a reliable source of working capital, personalized support, and a collaborative partnership dedicated to driving success.",
->>>>>>> 3b36823e65545ad3ec2b5c2110afcf15fd3d380c
   },
 ];
 
-export default function Example() {
+export default function Example(trackFAQClick) {
+  const handleFAQClick = (question) => {
+    mixpanel.track("landingPageClick", { FAQ: true, question });
+    if (typeof trackFAQClick === 'function') {
+      trackFAQClick();
+    }
+  };
   return (
     <div className="bg-white">
       <div className="mx-auto max-w-7xl px-6 py-24 sm:py-32 lg:px-8 lg:py-40">
@@ -72,7 +73,10 @@ export default function Example() {
                 {({ open }) => (
                   <>
                     <dt>
-                      <Disclosure.Button className="flex w-full items-start justify-between text-left text-gray-900">
+                      <Disclosure.Button
+                        className="flex w-full items-start justify-between text-left text-gray-900"
+                        onClick={() => handleFAQClick(faq.question)}
+                      >
                         <span className="text-base font-semibold leading-7">
                           {faq.question}
                         </span>
