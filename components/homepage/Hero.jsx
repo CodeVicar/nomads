@@ -6,7 +6,7 @@ import mixpanel from "mixpanel-browser";
 
 export default function Example() {
   return (
-    <div className="bg-white py-4">
+    <div className="bg-white py-4 font-roboto-mono">
       <div className="flex flex-col lg:flex-row gap-8">
         <div className="mx-auto max-w-7xl">
           <div className="relative z-10 pt-4 lg:w-full lg:max-w-2xl">
@@ -26,7 +26,7 @@ export default function Example() {
                     <p className="font-semibold">SME Invoice Finance</p>
                   </div>
                 </div>
-                <h1 className="text-4xl font-bold tracking-tight text-gray-900 sm:text-6xl">
+                <h1 className="text-4xl font-bold tracking-tight text-gray-900 sm:text-4xl">
                   Turn outstanding invoices <span>into </span>
                   <span className="text-green-600  font-bold">
                     instant capital
