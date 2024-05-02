@@ -14,7 +14,10 @@ import mixpanel from "mixpanel-browser";
 export default function ContactUs() {
   useEffect(() => {
     initMixpanel();
+    mixpanel.track("contact_view");
   }, []);
+
+
   const [formData, setFormData] = useState({
     distinct_id: "",
     firstName: "",

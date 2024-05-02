@@ -15,7 +15,8 @@ import initMixpanel from "@/lib/mixpanel";
 
 import mixpanel from "mixpanel-browser";
 
-mixpanel.init("11c66f8a82188d2591e985b37929f760", { track_pageview: true });
+
+// mixpanel.init("11c66f8a82188d2591e985b37929f760", { track_pageview: true });
 
 
 export default function Home() {

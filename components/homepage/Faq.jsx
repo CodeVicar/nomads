@@ -75,7 +75,8 @@ export default function Example(trackFAQClick) {
                     <dt>
                       <Disclosure.Button
                         className="flex w-full items-start justify-between text-left text-gray-900"
-                        onClick={() => handleFAQClick(faq.question)}
+                        // onClick={() => handleFAQClick(faq.question)}
+                        onClick={() => { handleFAQClick(); }}
                       >
                         <span className="text-base font-semibold leading-7">
                           {faq.question}

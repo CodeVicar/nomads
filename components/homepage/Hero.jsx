@@ -4,7 +4,14 @@ import { Dialog } from "@headlessui/react";
 import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
 import mixpanel from "mixpanel-browser";
 
-export default function Example() {
+export default function Example(trackLearnMoreClick) {
+
+  const handleLearMore = (question) => {
+    mixpanel.track("landingPageClick", { learMore: true });
+    if (typeof trackLearnMoreClick === 'function') {
+      trackLearnMoreClick();
+    }
+  };
   return (
     <div className="bg-white py-4 font-roboto-mono">
       <div className="flex flex-col lg:flex-row gap-8">
@@ -42,15 +49,17 @@ export default function Example() {
                   <a
                     href="/contact"
                     className="rounded-md bg-green-500 border-2 px-3.5 py-3.5 text-lg font-bold text-white shadow-sm focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
-                    onClick={() => mixpanel.track("Apply Now ")}
-
+                    // onClick={() => mixpanel.track("applyNow")}
+        
                   >
                     Apply Now
                   </a>
                   <a
                     href="/about"
                     className="text-sm font-semibold leading-6 text-gray-900"
-                  >
+                    onClick={() => {
+                      handleLearMore();
+                    }}                  >
                     Learn more{" "}
                     <span aria-hidden="true" className="text-xl font-bold">
                       →
