@@ -32,6 +32,11 @@ export default function Home() {
   const trackFAQClick = () => {
     mixpanel.track("landingPageClick", { FAQ: true });
   };
+
+  const loginPage = () => {
+    mixpanel.track("loginPageClick", { login: true });
+  }
+
   return (
     <main className="bg-white">
       <Hero />

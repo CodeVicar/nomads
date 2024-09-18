@@ -21,6 +21,11 @@ export default function Navbar() {
 
   const handleBookDemoClick = () => {
     mixpanel.track("landingPageClick", { bookDemo: true });
+
+  };
+
+  const handleLoginClick = () => {
+    mixpanel.track("loginPageClick", { login: true });
   };
 
   return (
@@ -61,6 +66,7 @@ export default function Navbar() {
           <a
             href="https://account.wareflowafrica.com/login"
             className="text-md text-gray-900 font-bold leading-6 py-3 px-4 underline "
+            onClick={handleLoginClick}
           >
             Login{" "}
           </a>
