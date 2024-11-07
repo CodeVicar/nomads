@@ -141,7 +141,7 @@ export default function ContactUs() {
                   />
                 </dt>
                 <dd>
-                  Woodland Business Park <br />
+                  Woodlands Business Park <br />
                   Kiambere Road (Upper Hill ) , <br />
                   Nairobi, Kenya{" "}
                 </dd>
